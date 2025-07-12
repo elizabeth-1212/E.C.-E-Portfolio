@@ -47,8 +47,8 @@ section {
     line-height: 1;
 }
  
-.orange {
-    color: #f06449 !important;
+.blue {
+    color: #4949f0 !important;
 }
 
 .click {
@@ -95,7 +95,7 @@ section {
 }
 
 .social__link {
-    background-color: #f06449;
+    background-color: #4949f0;
     color: white;
     padding: 6px;
     width: 32px;
