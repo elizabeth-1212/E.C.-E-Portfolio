@@ -16,9 +16,9 @@ function contact(event){
         success.classList += " modal__overlay--visible";        
     }).catch(() => {
         loading.classList.remove("modal__overlay--visible");
-        alert{
+        alert(
             "The email service is temporarily unavailable. Please contact me directly at elizabethcommon12@gmail.com"
-        };
+        );
     })
 }
 
