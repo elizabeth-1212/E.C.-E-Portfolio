@@ -1,25 +1,24 @@
-//template_4m21yr6
-//service_hgre0ni
-//pU-TiVS8GqxtDsVdb
 
 
 function contact(event){
     event.preventDefault();
-//    emailjs
-//        .sendForm(
-//            'service_hgre0ni',
-//            'template_4m21yr6',
-//            event.target,
-//            'pU-TiVS8GqxtDsVdb'  
-//      ).then(() => {
-//            console.log('this worked1');
-//        })
-const loading = document.querySelector('.modal__overlay--loading');
-const success = document.querySelector('.modal__overlay--success');
-loading.classList += " modal__overlay--visible"
-setTimeout (() => {
-    console.log('it worked 1');
-}, 500);
-
+    const loading = document.querySelector('.modal__overlay--loading');
+    const success = document.querySelector('.modal__overlay--success');
+    loading.classList += " modal__overlay--visible";
+    emailjs
+        .sendForm(
+            'service_hgre0ni',
+            'template_4m21yr6',
+            event.target,
+            'pU-TiVS8GqxtDsVdb'  
+    ).then(() => {
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";        
+    }).catch(() => {
+        loading.classList.remove("modal__overlay--visible");
+        alert{
+            "The email service is temporarily unavailable. Please contact me directly at elizabethcommon12@gmail.com"
+        };
+    })
 }
 
