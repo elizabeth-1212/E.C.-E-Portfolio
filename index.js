@@ -22,3 +22,8 @@ function contact(event){
     })
 }
 
+
+function toggleModal() {
+    document.body.classlist += " modal--open";
+}
+
