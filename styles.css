@@ -517,6 +517,10 @@ nav {
     overflow: hidden;
 }
 
+.project {
+    margin-bottom: 135px;
+}
+
 .project__wrapper:hover .project__description {
     opacity: 1;
     transform: translateY(-50%);
